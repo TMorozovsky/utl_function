@@ -9,7 +9,7 @@ namespace memory_management_detail
 {
   using size_t = decltype(sizeof(0));
 
-  [[nodicard]] inline void* impl_operator_new(size_t size);
+  [[nodiscard]] inline void* impl_operator_new(size_t size);
   inline void impl_operator_delete(void* address) noexcept;
 }
 
